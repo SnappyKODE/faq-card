@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+}
+body{
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main{
+    background-color: hsl(240, 5%, 91%);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 60vh;
+    width: 60%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 50px rgb(48, 47, 47);
+}
+
+.image{
+    position: relative;
+    overflow: hidden;
+}
+
+.bg{
+    position: absolute;
+    z-index: 0;
+    right: 100px;
+    width: 700px;
+    top: -200px;
+
+}
+
+.women{
+    width: 380px;
+    position: absolute;
+    display: block;
+    top: 10%;
+    right: 22%;
+    z-index: 0; 
+}
+
+.box{
+    width: 160px;
+    position: absolute; 
+    top: 42.5%;
+    right: 74%;
+    filter: drop-shadow(0px 15px 20px hsl(240, 40%, 47%));
+}
+
+.faq{
+    padding: 40px;
+    padding-left: 0;
+}
+
+h1{
+    color: hsl(238, 29%, 16%);
+    margin-bottom: 20px;
+}
+
+h4{
+    display: inline;
+    color: hsl(237, 12%, 33%);
+    font-size: 14px;
+}
+
+p{
+    color: hsl(240, 6%, 50%);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.dark{
+    color: hsl(238, 29%, 16%);
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}
+
+.changeArrow{
+    rotate: 180deg;
+}
+
+hr{
+    background-color: hsl(240, 5%, 91%);
+    opacity: 50%;
+    margin: 15px 0px;
+}
+
+@media screen and (max-width: 450px) and (orientation: portrait) {
+    .main{
+        background-color: hsl(240, 5%, 91%);
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 3fr;
+        height: 75vh;
+        width: 80%;
+        border-radius: 30px;
+        box-shadow: 0px 2px 30px rgb(48, 47, 47);
+    }
+    
+    .image{
+        position: relative;
+        overflow: visible;
+    }
+    
+    .bg{
+        position: absolute;
+        z-index: 0;
+        right: 10%;
+        width: 230px;
+        top: -95%;
+    
+    }
+    
+    .women{
+        width: 200px;
+        position: absolute;
+        display: block;
+        top: -65%;
+        right: 15%;
+        z-index: 0; 
+    }
+    
+    .box{
+        width: 80px;
+        position: absolute; 
+        top: 8%;
+        right: 55%;
+        filter: drop-shadow(0px 15px 20px hsl(240, 40%, 47%));
+    }
+    
+    .faq{
+        padding: 0px;
+        padding-left: 0;
+        margin: -20px 20px 20px 20px;
+    }
+    
+    h1{
+        color: hsl(238, 29%, 16%);
+        margin-bottom: 25px;
+        text-align: center;
+        font-weight: 800;
+    }
+    
+    h4{
+        display: inline;
+        color: hsl(237, 12%, 33%);
+        font-size: 13px;
+    }
+    
+    p{
+        color: hsl(240, 6%, 50%);
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}
+
+@media (hover: hover){
+    h4:hover{
+        color: hsl(14, 88%, 65%);
+    }
+}
+
